@@ -3,6 +3,8 @@ export interface ILessonModel {
  lessonTranslation?: string
  flexPosition?: string
  block: ILessonBlock []
+ lock: 'open' | 'closed'
+ status: boolean
 }
 
 export interface ILessonBlock {
