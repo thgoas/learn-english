@@ -15,21 +15,32 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
+          
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
+          
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -40,15 +51,32 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
+        
       },
+      {
+        body: [
+          {
+            word: 'test',
+            isQuestion: true,
+            question: {
+              successes: 3,
+              errors: 5
+            }
+          }
+        ]
+      }
     ],
   },
   {
@@ -65,21 +93,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -90,12 +126,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -115,21 +155,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -140,12 +188,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -165,21 +217,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -190,12 +250,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -215,21 +279,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -240,12 +312,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -265,21 +341,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -290,12 +374,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -315,21 +403,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -340,12 +436,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -365,21 +465,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -390,12 +498,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -415,21 +527,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -440,12 +560,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },
@@ -465,21 +589,29 @@ export const dataImage: ILessonModel[] = [
             word: 'I',
             translation: 'Eu',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'My',
             translation: 'Meu, Minha',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'You',
             translation: 'Você',
             separator: '-',
+            isQuestion: false
+
           },
           {
             word: 'Your',
             translation: 'seu, sua (você)',
             separator: '-',
+            isQuestion: false
+
           },
         ],
       },
@@ -490,12 +622,16 @@ export const dataImage: ILessonModel[] = [
             word: 'To NEED/NEEDED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
           {
             flexPosition: 'center',
             word: 'To SEE/SEED',
             translation: 'precisar',
             image_url: '/teste.jpg',
+            isQuestion: false
+
           },
         ],
       },

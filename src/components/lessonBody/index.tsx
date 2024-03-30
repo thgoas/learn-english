@@ -4,17 +4,21 @@ import {
   NavigateBefore,
   NavigateNext,
   PlayCircleOutline,
+  Speaker,
 } from '@mui/icons-material'
 import TextToSpeech from '../textToSpeech'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { useList } from '@/contexts/listContext'
 
-
 export default function LessonBody() {
-
-  const { nextLesson, pageBlock, nextPageBlock, backPageBlock, selectedLesson } = useList()
-
+  const {
+    nextLesson,
+    pageBlock,
+    nextPageBlock,
+    backPageBlock,
+    selectedLesson,
+  } = useList()
 
   const handleNextLesson = () => {
     nextLesson()
@@ -83,6 +87,17 @@ export default function LessonBody() {
                 </Box>
                 <TextToSpeech transcript={body.word} />
               </Box>
+              {body.isQuestion ? (
+              <Box display="flex"
+                alignItems="center"
+                justifyContent="space-between" >
+                
+                <Typography variant="subtitle1" component="p">
+                  test your pronunciation: Successes {body.question?.successes} - Erros: {body.question?.errors}
+                </Typography>
+              <TextToSpeech transcript={body.word} />
+              </Box>
+              ) : null}
             </Paper>
           </Box>
         ))}
@@ -95,19 +110,19 @@ export default function LessonBody() {
         >
           Back
         </Button>
-        
+
         {selectedLesson?.block.length === pageBlock + 1 ? (
           <Button onClick={handleNextLesson} endIcon={<NavigateNext />}>
             Next Lesson
           </Button>
         ) : (
           <Button
-          disabled={selectedLesson?.block.length === pageBlock + 1}
-          onClick={nextPageBlock}
-          endIcon={<NavigateNext />}
-        >
-          Next
-        </Button>
+            disabled={selectedLesson?.block.length === pageBlock + 1}
+            onClick={nextPageBlock}
+            endIcon={<NavigateNext />}
+          >
+            Next
+          </Button>
         )}
       </Box>
     </Box>

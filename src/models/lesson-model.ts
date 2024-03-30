@@ -23,4 +23,12 @@ export interface ILessonBody {
  bold?: boolean
  italic?: boolean
  image_url?: string
+ isQuestion: boolean
+ question?: IQuestion
 }
+
+export interface IQuestion {
+  successes: number
+  errors: number
+}
+
