@@ -22,9 +22,7 @@ interface voiceContextType {
   setRate: React.Dispatch<React.SetStateAction<number>>
 }
 
-const voiceContext = createContext<voiceContextType | undefined>(
-  undefined
-)
+const voiceContext = createContext<voiceContextType | undefined>(undefined)
 
 export const useVoice = (): voiceContextType => {
   const context = useContext(voiceContext)
@@ -42,29 +40,28 @@ export const VoiceProvider = ({ children }: { children: ReactNode }) => {
   const [volume, setVolume] = useState(1)
 
   useEffect(() => {
-    const synth = window.speechSynthesis;
+    const synth = window.speechSynthesis
 
     const handleVoicesChanged = () => {
-      const updatedVoices = synth.getVoices();
-      setVoices(updatedVoices);
+      const updatedVoices = synth.getVoices()
+      setVoices(updatedVoices)
 
-      const englishVoices = updatedVoices.filter(voice => voice.lang.startsWith('en-US'));
+      const englishVoices = updatedVoices.filter((voice) =>
+        voice.lang.startsWith('en-US')
+      )
       if (englishVoices.length > 0 && !selectedVoice) {
-        setSelectedVoice(englishVoices[0]);
+        setSelectedVoice(englishVoices[0])
       }
-    };
+    }
 
+    synth.addEventListener('voiceschanged', handleVoicesChanged)
 
-    synth.addEventListener('voiceschanged', handleVoicesChanged);
-
-
-    handleVoicesChanged();
+    handleVoicesChanged()
 
     return () => {
-      synth.removeEventListener('voiceschanged', handleVoicesChanged);
-    };
-  }, [selectedVoice]);
-
+      synth.removeEventListener('voiceschanged', handleVoicesChanged)
+    }
+  }, [selectedVoice])
 
   const handleVoiceChange = (voice: Voice) => {
     setSelectedVoice(voice)
@@ -77,7 +74,7 @@ export const VoiceProvider = ({ children }: { children: ReactNode }) => {
       utterance.pitch = pitch
       utterance.volume = volume
       utterance.rate = rate
-      
+
       window.speechSynthesis.speak(utterance)
     }
   }
@@ -92,12 +89,8 @@ export const VoiceProvider = ({ children }: { children: ReactNode }) => {
     rate,
     setRate,
     setVolume,
-    setPitch
+    setPitch,
   }
 
-  return (
-    <voiceContext.Provider value={value}>
-      {children}
-    </voiceContext.Provider>
-  )
+  return <voiceContext.Provider value={value}>{children}</voiceContext.Provider>
 }

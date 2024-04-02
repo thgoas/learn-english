@@ -10,6 +10,7 @@ import TextToSpeech from '../textToSpeech'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { useList } from '@/contexts/listContext'
+import SpeechToText from '../SpeechToText'
 
 export default function LessonBody() {
   const {
@@ -95,7 +96,7 @@ export default function LessonBody() {
                 <Typography variant="subtitle1" component="p">
                   test your pronunciation: Successes {body.question?.successes} - Erros: {body.question?.errors}
                 </Typography>
-              <TextToSpeech transcript={body.word} />
+              <SpeechToText transcript={body.word}/>
               </Box>
               ) : null}
             </Paper>

@@ -7,6 +7,7 @@ import theme from '../theme'
 import Layout from '@/components/Layout'
 import { VoiceProvider } from '@/contexts/voiceContext'
 import { ListProvider } from '@/contexts/listContext'
+import { SpeechProvider } from '@/contexts/speechContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +28,10 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <ListProvider>
               <VoiceProvider>
-                <Layout>{children}</Layout>
+                <SpeechProvider>
+
+                 <Layout>{children}</Layout>
+                </SpeechProvider>
               </VoiceProvider>
             </ListProvider>
           </ThemeProvider>
